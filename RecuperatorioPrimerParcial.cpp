@@ -16,48 +16,28 @@ void RecuperatorioPrimerParcial::cursosConMayorAyuda()
 		(25 - Puntos)
 		*/
  
-
-
-	ClaseParticular clasepart;
 	ClasesParticularesArchivo clasePartArch;
-	int vecCurso[10] = {};
-	int maxi = 0;
+	int largoDelArchivo = clasePartArch.getCantidad();
+	int vecCursos[10] = {};
+	int maximasHoras = 0 ;
+	for (int i = 0; i < largoDelArchivo; i++) {
 
-	for (int i = 0; i < clasePartArch.getCantidad(); i++) {
-
-		vecCurso[clasePartArch.leer(i).getIdCurso() - 1] += (clasePartArch.leer(i).getDuracion());
+		vecCursos[clasePartArch.leer(i).getIdCurso() -1]+= clasePartArch.leer(i).getDuracion();
 
 
-		
 	}
 
-	
+	for (int x = 0; x < 10; x++) {
 
-
-
-
-	vecCurso[0] = maxi;
-
-	for (int j = 0; j < 10; j++) {
-
-
-		if (vecCurso[j] >= maxi) {
-
-			maxi = vecCurso[j];
-
-		}
+		if (vecCursos[x] > maximasHoras) maximasHoras = vecCursos[x];
 
 
 	}
 
 
+	for (int j = 0; j < 10; j++) if (vecCursos[j] == maximasHoras) { cout << "los cursos con mas horas son: " << j + 1 << endl; }
 
-	for (int y = 0; y < 10; y++) {
 
-		if (maxi == vecCurso[y]) { cout << " los cursos son:  " << clasePartArch.leer(y).getIdCurso() + 1 << endl; }
-		// me tenia que dar 10 :(
-
-	}
 
 }
 

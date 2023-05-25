@@ -6,8 +6,10 @@ int main() {
 
 	RecuperatorioPrimerParcial recu;
 
+	
+
 	recu.cursosConMayorAyuda();
-	recu.alumnosConPocaAyuda();
-	recu.nuncaRecibioAyuda();
+	//recu.alumnosConPocaAyuda();
+	//recu.nuncaRecibioAyuda();
   return 0;
 }
