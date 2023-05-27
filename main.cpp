@@ -8,8 +8,11 @@ int main() {
 
 	
 
-	recu.cursosConMayorAyuda();
+	//recu.cursosConMayorAyuda();
 	//recu.alumnosConPocaAyuda();
-	//recu.nuncaRecibioAyuda();
-  return 0;
+	recu.nuncaRecibioAyuda();
+	//recu.generarEstadisticaAyuda();
+	//recu.mostrarEstadisticas();
+	
+	return 0;
 }

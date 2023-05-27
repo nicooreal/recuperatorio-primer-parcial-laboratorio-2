@@ -2,16 +2,17 @@
 class RecuperatorioPrimerParcial
 {
 private:
-
+	float _promedio;
 
 public:
 	void cursosConMayorAyuda();
 	
 	void alumnosConPocaAyuda();
 
-	void generarEstadisticaAyuda();
-
 	void nuncaRecibioAyuda();
 
+	void generarEstadisticasAyuda();
+
+	void mostrarEstadisticas();
 };
 
